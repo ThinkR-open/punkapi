@@ -1,0 +1,35 @@
+---
+title: "punk_randoms"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{punk_randoms}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(punkapi)
+```
+
+
+```{r}
+
+# return a random beer and all his documentation
+# output is a dataframe
+punkapi::punk_randoms(path_api = "https://api.punkapi.com/v2/beers/random")
+
+# by default the path_api is https://api.punkapi.com/v2/beers/random
+punkapi::punk_randoms()
+
+
+
+
+```
+
