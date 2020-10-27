@@ -1,6 +1,6 @@
 #' API result to 1-row data frame
 #'
-#' @param url
+#' @param url url d'interrogation de l'API
 #'
 #' @return A 1-row data frame containing the result of the API
 #' @export
@@ -9,8 +9,8 @@
 #' @importFrom tibble tibble
 #'
 #' @examples
-#' out <- APIres21rdf("https://api.punkapi.com/v2/beers/1")
-APIres21rdf <- function(url) {
+#' out <- parse_result("https://api.punkapi.com/v2/beers/1")
+parse_result <- function(url) {
   res <- GET(url)
   df <- content(res)[[1]] # <- Turn this into a data.frame with one row
   dfout <- tibble(
