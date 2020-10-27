@@ -1,8 +1,5 @@
 
 
-library(jsonlite)
-library(assertthat)
-
 #' punk_random
 #'
 #' @param path_api a valid API URL
@@ -34,5 +31,4 @@ punk_randoms <- function(path_api) {
 
   return(df)
 }
-
 
