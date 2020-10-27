@@ -2,6 +2,7 @@
 
 export(APIres21rdf)
 export(check_results)
+export(parse_result)
 importFrom(assertthat,assert_that)
 importFrom(httr,GET)
 importFrom(httr,content)
