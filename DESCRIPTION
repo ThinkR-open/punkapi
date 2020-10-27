@@ -18,3 +18,4 @@ Imports:
     assertthat
 Suggests: 
     testthat
+    tibble
