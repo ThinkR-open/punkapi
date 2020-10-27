@@ -1,6 +1,6 @@
 #' API result to 1-row data frame
 #'
-#' @param url
+#' @param url url d'interrogation de l'API
 #'
 #' @return A 1-row data frame containing the result of the API
 #' @export
