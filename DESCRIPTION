@@ -19,7 +19,8 @@ Imports:
     httr,
     assertthat,
     tibble,
-    purrr
+    purrr,
+    dplyr
 Suggests: 
     testthat,
     knitr,
