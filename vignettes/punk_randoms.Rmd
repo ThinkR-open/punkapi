@@ -18,18 +18,17 @@ knitr::opts_chunk$set(
 library(punkapi)
 ```
 
+## Return one or more random beer(s)
+
+
+> Note that the randoms version will delay each request by 1 second, as required by the Punk API
 
 ```{r}
-
 # return a random beer and all his documentation
 # output is a dataframe
-punkapi::punk_randoms(path_api = "https://api.punkapi.com/v2/beers/random")
+punk_randoms()
 
-# by default the path_api is https://api.punkapi.com/v2/beers/random
-punkapi::punk_randoms()
-
-
-
+punk_randoms(n = 6)
 
 ```
 

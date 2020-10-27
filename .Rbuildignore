@@ -4,3 +4,4 @@
 ^\.github$
 ^dev_history\.R$
 ^LICENSE\.md$
+^doc$
