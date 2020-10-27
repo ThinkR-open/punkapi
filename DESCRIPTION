@@ -16,3 +16,5 @@ RoxygenNote: 7.1.1
 Imports: 
     httr,
     assertthat
+Suggests: 
+    testthat
