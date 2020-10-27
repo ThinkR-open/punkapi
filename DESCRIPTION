@@ -9,7 +9,19 @@ Authors@R:
            comment = c(ORCID = "0000-0001-7343-1846"))
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
+VignetteBuilder: 
+    knitr
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
+Imports: 
+    httr,
+    assertthat,
+    tibble,
+    purrr,
+    dplyr
+Suggests: 
+    testthat,
+    knitr,
+    rmarkdown
