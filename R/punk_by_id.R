@@ -37,7 +37,8 @@ slow_punk_id <- purrr::slowly(
 #' @param lst List of beer ids
 #'
 #' @return A dataframe containing the API request data
-#' @noRd
+#' @export
+#' @rdname punk_by_id
 #'
 #' @importFrom purrr map_df
 #'
