@@ -36,7 +36,9 @@ parse_result <- function(content) {
     brewers_tips = content$brewers_tips %||% NA,
     contributed_by = content$contributed_by %||% NA
   )
+
    class(res) <- c("beer", class(res))
+
 
   res
 
