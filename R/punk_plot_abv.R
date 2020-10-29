@@ -1,7 +1,15 @@
-library("ggplot2")
-library("assertthat")
-library("dplyr")
-
+#' Returns a barplot with a predetermined number of bars
+#'
+#' @param perpage
+#'
+#' @return A figure
+#' @export
+#' @importFrom assertthat assert_that
+#' @import dplyr
+#' @import ggplot2
+#'
+#' @examples
+#' punk_plot_abv(10)
 punk_plot_abv <- function(perpage){
   assert_that(
     is.numeric(perpage),
