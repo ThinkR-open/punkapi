@@ -38,7 +38,7 @@ parse_result <- function(content) {
   )
    class(res) <- c("beer", class(res))
 
-     res
+  res
 
 }
 
