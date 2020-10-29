@@ -36,11 +36,10 @@ punk_by_ibu <- function(ibu_gt=10, ibu_lt=20){
 
   check_results(res)
 
-  parse_results(res)
+res <-  parse_results(res)
 
   return(res)
 
 
 }
-
 
