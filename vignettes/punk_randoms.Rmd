@@ -26,9 +26,9 @@ library(punkapi)
 ```{r}
 # return a random beer and all his documentation
 # output is a dataframe
-punk_randoms()
-
-punk_randoms(n = 6)
+# punk_randoms()
+# 
+# punk_randoms(n = 6)
 
 ```
 

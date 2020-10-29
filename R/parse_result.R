@@ -13,7 +13,7 @@
 #' res <- GET("https://api.punkapi.com/v2/beers/1")
 #' parse_result(content(res)[[1]])
 parse_result <- function(content) {
-  tibble(
+  res <- tibble(
     id = content$id %||% NA,
     name = content$name %||% NA,
     tagline = content$tagline %||% NA,
@@ -36,6 +36,10 @@ parse_result <- function(content) {
     brewers_tips = content$brewers_tips %||% NA,
     contributed_by = content$contributed_by %||% NA
   )
+   class(res) <- c("beer", class(res))
+
+  res
+
 }
 
 #' API results to 1-row data frame
