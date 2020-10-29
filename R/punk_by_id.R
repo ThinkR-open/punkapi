@@ -5,6 +5,7 @@
 #' @param id beer id
 #'
 #' @export
+#' @rdname punk_by_id
 #' @importFrom httr GET content
 #' @importFrom assertthat assert_that
 #'
