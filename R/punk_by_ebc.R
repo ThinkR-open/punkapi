@@ -8,7 +8,7 @@
 #' @import assertthat
 #'
 #' @examples
-#' out <- punk_by_ebc(12,10)
+#' out <- punk_by_ebc(5,10)
 punk_by_ebc <- function(ebcmin=5, ebcmax=10){
   assert_that(
     is.numeric(ebcmin),
@@ -33,5 +33,8 @@ punk_by_ebc <- function(ebcmin=5, ebcmax=10){
   res <- httr::GET("https://api.punkapi.com/v2/beers",
                    query = list("ebc_gt" = as.character(ebcmin),
                                 "ebc_lt" = as.character(ebcmax)))
-  return(res)
+  check_results(res)
+  ct <- content(res)
+  out <- parse_results(ct)
+  return(out)
 }
