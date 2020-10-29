@@ -20,7 +20,8 @@ Imports:
     assertthat,
     tibble,
     purrr,
-    dplyr
+    dplyr,
+    cli
 Suggests: 
     testthat,
     knitr,
