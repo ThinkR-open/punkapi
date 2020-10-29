@@ -1,0 +1,30 @@
+---
+title: "punk_by"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{punk_by}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(punkapi)
+```
+
+```{r}
+
+
+# get beers on basis of abv_gt and abv_lt
+
+punk_by_abv(abv_gt = "3", abv_lt = "6")
+
+
+```
+
