@@ -47,9 +47,10 @@ BEFORE making a commit to your branch:
     git rebase origin/main
     git stash apply
 
-  - Resolve conflicts
+  - Resolve conflicts (if any)
   - Commit
   - Push
+  - Create a PR
 
 ## Requirements
 

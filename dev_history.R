@@ -18,3 +18,6 @@ usethis::use_package("assertthat")
 usethis::use_test("check_results")
 
 usethis::use_vignette(name = "punk_by")
+usethis::use_test("punk_by_id")
+
+
