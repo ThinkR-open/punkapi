@@ -33,9 +33,14 @@ punk_by_ibu <- function(ibu_gt=10, ibu_lt=20){
   res <- httr::GET("https://api.punkapi.com/v2/beers",
                    query = list("ibu_gt" = as.character(ibumin),
                                 "ibu_lt" = as.character(ibumax)))
-  return(res)
 
   check_results(res)
+
+  parse_result(res)
+
+  return(res)
+
+
 }
 
 
