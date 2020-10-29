@@ -34,7 +34,7 @@ punk_by_ebc <- function(ebcmin=5, ebcmax=10){
                    query = list("ebc_gt" = as.character(ebcmin),
                                 "ebc_lt" = as.character(ebcmax)))
   check_results(res)
-  ct <- content(res)
+  ct <- content(res)[[1]]
   out <- parse_results(ct)
   return(out)
 }
