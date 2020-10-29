@@ -21,7 +21,8 @@ Imports:
     tibble,
     purrr,
     dplyr,
-    cli
+    cli,
+    glue
 Suggests: 
     testthat,
     knitr,

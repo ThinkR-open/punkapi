@@ -21,6 +21,8 @@ punk_rate_limit <- function() {
 #' @return a boolean
 #' @export
 #' @rdname punk_rate_limit
+#' @importFrom assertthat assert_that
+#' @importFrom glue glue
 #'
 #' @examples check_rate_limit()
 check_rate_limit <- function() {
@@ -31,7 +33,7 @@ check_rate_limit <- function() {
 
   assert_that(rate_limit != 429, msg = "You have reached your limit on this ip address please wait an hour")
 
-  message(glue::glue("{rate_limit} calls remaining"))
+  message(glue("{rate_limit} calls remaining"))
 
   return(TRUE)
 
