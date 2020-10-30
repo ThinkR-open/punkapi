@@ -20,4 +20,5 @@ usethis::use_test("check_results")
 usethis::use_vignette(name = "punk_by")
 usethis::use_test("punk_by_id")
 
-
+usethis::use_vignette(name = "summary_beer")
+usethis::use_test("summary_beer")

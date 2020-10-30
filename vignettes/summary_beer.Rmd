@@ -1,0 +1,41 @@
+---
+title: "summary_beer"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{summary_beer}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(punkapi)
+```
+
+```{r}
+
+
+res <- httr::GET("https://api.punkapi.com/v2/beers", query = list("per_page" = "80"))
+check_results(res)
+df <- httr::content(res)
+
+# retrieve a specific summary (tibble) for a beer class object
+# df must be a list of dataframes of beer class object
+
+
+# Not works
+summary.beer(df)
+
+# works
+attr(df, "class") <- "beer"
+
+summary(df)
+
+```
+
